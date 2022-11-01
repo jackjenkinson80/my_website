@@ -3,7 +3,7 @@ name: Example Release
 on:
   push:
     tags:
-      - "release/v1"
+      - "release/v.1"
 jobs:
   build:
     runs-on: ubuntu-latest
