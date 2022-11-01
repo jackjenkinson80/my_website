@@ -3,7 +3,7 @@ name: Example Release
 on:
   push:
     tags:
-      - 'release/v*'
+      - "release/v1"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -43,10 +43,3 @@ jobs:
           tags: |
             ghcr.io/${{ github.actor }}/${{ github.event.repository.name }}:latest
             ghcr.io/${{ github.actor }}/${{ github.event.repository.name }}:${{ env.RELEASE_VERSION }}
-
-
-
-
-
-
-
