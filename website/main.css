@@ -86,3 +86,8 @@ a:visited {
   background-color: rgb(0, 170, 255);
   color: white;
 }
+
+#disco_btn {
+  background-color: rgb(0, 170, 255);
+  margin-left: 1rem;
+}
