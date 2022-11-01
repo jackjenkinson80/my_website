@@ -1,0 +1,22 @@
+if (e.key === "Enter" && current_word.length === 5) {
+    word = current_word.join("");
+    if (wordList.includes(word)) {
+      word_accuracy = wordGuess(word, secretWord);
+      current_word = [];
+      console.log(word_accuracy);
+      for (i = 0; i < 5; i++) {
+        if (word_accuracy[i] === 2) {
+          letter_containers[
+            i + 5 * current_row
+          ].style.backgroundColor = `rgb(0, 204, 0)`;
+        }
+        if (word_accuracy[i] === 1) {
+          console.log(word_accuracy[i] === 1);
+          letter_containers[
+            i + 5 * current_row
+          ].style.backgroundColor = `rgb(255, 128, 0)`;
+        }
+      }
+      current_row += 1;
+    }
+  }
