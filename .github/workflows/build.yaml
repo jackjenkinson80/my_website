@@ -1,7 +1,5 @@
 # build.yaml
-name: Static Site Example Build
-on:
-  push:# build.yaml
+
 name: Static Site Example Build
 on:
   push:
